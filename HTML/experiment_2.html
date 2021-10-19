@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>experiment02</title>
+  <style>
+    span.label{
+      border-radius: 3px;
+      color: whitesmoke;
+      padding: 0 5px;
+
+    }
+    span.success{
+      border-radius: 3px;
+      background-color: #248a4a;
+      color: white;
+      padding:0 5px;
+    }
+    span.warning{
+      border-radius: 3px;
+      background-color: #f88800;
+      color: white;
+      padding:0 5px;
+    }
+    table{
+      width: 100%;
+      padding: 10px;
+      border-collapse: collapse;
+    }
+
+    table td,table th{
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid black;
+    }
+    table tr:nth-child(even){
+      background-color: #a4a3a8;
+    }
+    a{
+      display: inline-block;
+      color: white;
+      border-radius: 8px;
+      background-color: rgba(255, 0, 64, 0.99);
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    a:hover{
+      background-color: firebrick;
+    }
+  </style>
+</head>
+<body>
+<h3>学生信息</h3>
+<div class="xinxi">
+  <p>
+    说明：以下为2046级学生名单，共4人，
+    <span class="label success">成功加载3人</span>。
+    <span class="label warning">警告：列表不包含降级学生</span>。
+  </p>
+  <div class="table">
+    <table>
+      <tr>
+        <th>#</th>
+        <th>姓名</th>
+        <th>班级</th>
+        <th>Email</th>
+        <th>操作</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>郭立新</td>
+        <td>软件工程2046级1班</td>
+        <td>guo@example.com</td>
+        <td>
+          <a href="table.html">修改</a>
+          <a href="table.html">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>黄英</td>
+        <td>软件工程2046级1班</td>
+        <td>huang@example.com</td>
+        <td>
+          <a href="table.html">修改</a>
+          <a href="table.html">删除</a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>吕惠玲</td>
+        <td>软件工程2046级2班</td>
+        <td>lv@example.com</td>
+        <td>
+          <a href="table.html">修改</a>
+          <a href="table.html">删除</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>

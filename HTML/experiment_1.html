@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>experiment_1</title>
+</head>
+<body>
+<form action="/register" method="post">
+  <div>
+    <h3>个人信息</h3>
+    用户名:<br> <label><input type="text" required></label> <br>
+    密码:<br> <label> <input type="password" required></label> <br>
+    性别:<br>
+    <input name="gender" type="radio" id="male">
+    <label for="male">Male</label> <br>
+    <input name="gender" type="radio" id="female">
+    <label for="female">Female</label> <br>
+    生日: <label><input type="date" required></label><br>
+    籍贯:
+    <label><input list="province"></label>
+    <datalist id="province">
+      <option>黑龙江</option>
+      <option>吉林</option>
+      <option>辽宁</option>
+      <option>山西</option>
+      <option>山东</option>
+      <option>广西</option>
+      <option>广东</option>
+      <option>湖南</option>
+      <option>湖北</option>
+    </datalist>
+    <br>
+    学历:
+    <select>
+      <option></option>
+      <option selected>学士</option>
+      <option>硕士</option>
+      <option>博士</option>
+    </select>
+  </div>
+  <div>
+    <h3>其他信息</h3>
+    喜欢的课程:
+    <ul>
+      <li><input type="checkbox" checked id="row_1">
+        <label for="row_1"> Web开发技术</label> </li>
+      <li><input type="checkbox" id="row_2">
+        <label for="row_2"> Java语言程序设计</label> </li>
+      <li><input type="checkbox" id="row_3">
+        <label for="row_3"> 数据库原理</label></li>
+      <li><input type="checkbox" id="row_4">
+        <label for="row_4"> 系统分析与测试</label></li>
+    </ul>
+  </div>
+  <div>
+    照片:
+    <input type="file" accept="*.jpg,.png">
+    <br> <button type="submit">提交</button>
+    <button type="reset">重置</button>
+  </div>
+</form>
+</body>
+</html>
